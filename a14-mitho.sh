@@ -6,6 +6,6 @@ git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2 .repo/lo
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
-riseup Mi439_4_19 userdebug 
+riseup mi439 userdebug 
 make installclean
 rise b
