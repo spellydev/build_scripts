@@ -8,4 +8,7 @@ git clone https://github.com/PhantomEnigma/local_manifests -b a14 .repo/local_ma
 . build/envsetup.sh
 riseup Mi439_4_19 userdebug 
 make installclean
+cd kernel/xiaomi/mithorium-4.19/kernel
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash
+croot
 rise b
