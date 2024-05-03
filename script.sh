@@ -9,7 +9,4 @@ git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2 .repo/lo
 . build/envsetup.sh
 riseup mi439 userdebug
 make installclean
-cd kernel/xiaomi/sdm439
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-croot
 rise b
