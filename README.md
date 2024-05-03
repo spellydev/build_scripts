@@ -1,4 +1,4 @@
 # build_scripts
 ```
-curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/main/a14-mitho.sh | bash
+curl -sf https://raw.githubusercontent.com/PhantomEnigma/build_scripts/rising-14-mclo/script.sh | bash
 ```
