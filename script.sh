@@ -7,6 +7,6 @@ git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-derp .re
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
-lunch derp_Mi439_4_19-ap1a-userdebug || lunch derp_Mi439_4_19-userdebug
+lunch derp_mi439-ap1a-userdebug || lunch derp_mi439-userdebug
 make installclean
 mka derp
