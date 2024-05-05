@@ -8,9 +8,5 @@ git clone https://github.com/PhantomEnigma/local_manifests .repo/local_manifests
 . build/envsetup.sh
 lunch lineage_Mi439-ap1a-userdebug
 make installclean
-#KSU
-#cd kernel/xiaomi/mithorium-4.19/kernel
-#curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-#croot
 brunch lineage_Mi439-ap1a-userdebug || brunch Mi439
 
