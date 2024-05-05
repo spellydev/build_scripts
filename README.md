@@ -1,4 +1,11 @@
+
 # build_scripts
+
 ```
-curl -sf https://raw.githubusercontent.com/PhantomEnigma/build_scripts/rising-14-mclo/script.sh | bash
+curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/derp-14-mclo/script.sh | bash
+```
+
+### For crave
+```
+crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/derp-14-mclo/script.sh | bash"
 ```
