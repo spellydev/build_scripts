@@ -7,6 +7,6 @@ git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-evo .rep
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
-lunch evolution_mi439-ap1a-userdebug
+lunch evolution_mi439-ap1a-userdebug || lunch evolution_mi439-userdebug
 make installclean
 m evolution
