@@ -1,12 +1,12 @@
 rm -rf .repo/local_manifests/
 #repo init rom
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14
+repo init -u https://github.com/CherishOS/android_manifest.git -b uqpr2
 #Local manifests
-git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-derp .repo/local_manifests
+git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-cherish .repo/local_manifests
 
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
-lunch derp_Mi439_4_19-ap1a-userdebug || lunch derp_Mi439_4_19-userdebug
+lunch cherish_mi439-ap1a-userdebug || lunch cherish_mi439-userdebug || lunch mi439-ap1a-userdebug || lunch mi439-userdebug
 make installclean
-mka derp
+brunch cherish_mi439-ap1a-userdebug || brunch cherish_mi439-userdebug || brunch mi439-ap1a-userdebug || brunch mi439-userdebug
