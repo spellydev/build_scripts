@@ -8,8 +8,4 @@ git clone https://github.com/PhantomEnigma/local_manifests -b a14-evo .repo/loca
 . build/envsetup.sh
 lunch lineage_Mi439_4_19-ap1a-userdebug || lunch lineage_Mi439_4_19-userdebug
 make installclean
-#KSU
-cd kernel/xiaomi/mithorium-4.19/kernel
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-croot
 m evolution
