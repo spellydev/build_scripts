@@ -28,7 +28,7 @@ source build/envsetup.sh
 lunch derp_mi439-ap1a-userdebug || lunch derp_mi439-userdebug
 
 # Make cleaninstall
-make installclean
+# make installclean
 
 # Build rom
 mka derp
