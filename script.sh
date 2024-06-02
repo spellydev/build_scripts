@@ -13,6 +13,11 @@ git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-derp .re
 export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
 
+# Keys
+cd vendor/derp/signing/keys
+git clone https://github.com/PhantomEnigma/build_keys.git .
+cd ../../../..
+
 # Set up build environment
 source build/envsetup.sh
 
