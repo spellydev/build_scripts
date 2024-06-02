@@ -17,7 +17,7 @@ export BUILD_HOSTNAME=crave
 source build/envsetup.sh
 
 # Setup Git LFS
-repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
+# repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
 # Lunch
 lunch derp_mi439-ap1a-userdebug || lunch derp_mi439-userdebug
