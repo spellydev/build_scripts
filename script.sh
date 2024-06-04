@@ -10,7 +10,8 @@ git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-derp .re
 /opt/crave/resync.sh
 
 # Export
-
+export BUILD_USERNAME=Phantom
+export BUILD_HOSTNAME=crave
 
 # Set up build environment
 source build/envsetup.sh
