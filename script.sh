@@ -12,11 +12,6 @@ git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-derp .re
 # Export
 
 
-# Keys
-cd vendor/derp/signing/keys
-git clone https://github.com/PhantomEnigma/build_keys.git .
-cd ../../../..
-
 # Set up build environment
 source build/envsetup.sh
 
@@ -27,7 +22,7 @@ source build/envsetup.sh
 lunch derp_mi439-ap1a-userdebug || lunch derp_mi439-userdebug
 
 # Make cleaninstall
-# make installclean
+make installclean
 
 # Build rom
 mka derp
