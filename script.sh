@@ -20,7 +20,7 @@ source build/envsetup.sh
 # repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
 # Lunch
-lunch derp_mi439-ap1a-userdebug || lunch derp_mi439-userdebug
+lunch derp_mi439-userdebug
 
 # Make cleaninstall
 make installclean
