@@ -9,6 +9,10 @@ git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-derp .re
 # build
 /opt/crave/resync.sh
 
+# keys
+git clone https://github.com/PhantomEnigma/build_keys.git -b keys build_keys
+cp build_keys/* vendor/derp/signing/keys
+
 # Export
 export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
