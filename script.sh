@@ -8,9 +8,9 @@ echo "=================="
 
 # Local manifests
 git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-derp .repo/local_manifests
-echo "=================="
+echo "============================"
 echo "Local manifest clone success"
-echo "=================="
+echo "============================"
 
 # build
 /opt/crave/resync.sh
