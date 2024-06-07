@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -rf .repo/local_manifests/
 
 # repo init rom
@@ -25,7 +27,15 @@ echo "============="
 echo "Keys copied"
 echo "============="
 
-
+# Remove overrides
+# Define a list of packages to remove
+echo "===== Remove overrides started ====="
+OVER_PACKAGES=("Dialer" "Contacts Contacts2" "messaging" "DeskClock" "Messaging")
+# Loop through the list and remove each package from Android.mk files
+for PACKAGEU in "${OVER_PACKAGES[@]}"; do
+  find vendor/gms -name 'Android.mk' -exec sed -i "/^LOCAL_OVERRIDES_PACKAGES := $PACKAGEU$/d" {} \;
+done
+echo "===== Remove overrides Success ====="
 # Export
 export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
