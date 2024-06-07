@@ -19,6 +19,10 @@ cp build_keys/* vendor/derp/signing/keys
 echo "============="
 echo "Keys copied"
 echo "============="
+# pico
+rm -rf vendor/gms/gms_pico.mk
+git clone https://github.com/PhantomEnigma/scripts.git -b pico gms_pico
+cp gms_pico/gms_pico.mk vendor/gms
 # Export
 export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
