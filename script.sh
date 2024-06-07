@@ -28,9 +28,9 @@ echo "============="
 # pico gapps
 git clone https://github.com/PhantomEnigma/scripts.git -b pico gms_pico
 cp gms_pico/gms_pico.mk vendor/gms
-echo "====================="
-echo "useless gapps removed"
-echo "====================="
+echo "==================="
+echo "Gapps list updated"
+echo "==================="
 
 # Export
 export BUILD_USERNAME=Phantom
