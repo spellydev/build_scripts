@@ -30,7 +30,7 @@ echo "============="
 # Remove overrides
 # Define a list of packages to remove
 echo "===== Remove overrides started ====="
-OVER_PACKAGES=("Dialer" "Contacts Contacts2" "messaging" "DeskClock" "Messaging" "Contacts")
+OVER_PACKAGES=("Dialer" "Contacts Contacts2" "messaging" "DeskClock" "Messaging" "Contacts" "webview Browser2" "webview" "Browser2" "PicoTts" "LatinIME")
 # Loop through the list and remove each package from Android.mk files
 for PACKAGEU in "${OVER_PACKAGES[@]}"; do
   find vendor/gms -name 'Android.mk' -exec sed -i "/^LOCAL_OVERRIDES_PACKAGES := $PACKAGEU$/d" {} \;
