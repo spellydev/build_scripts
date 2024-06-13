@@ -33,4 +33,5 @@ echo "====== Envsetup Done ======="
 lunch infinity_mi439-userdebug || lunch infinity_mi439-ap1a-userdebug
 echo "====== lunch success ======"
 
+make installclean
 mka bacon
