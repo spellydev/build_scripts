@@ -29,6 +29,12 @@ git fetch https://github.com/DerpFest-AOSP/frameworks_base 14
 git cherry-pick 56dc92f
 cd ../..
 
+# Signing
+git clone https://github.com/Phantm7/android_vendor_superior-priv_keys-template.git vendor/superior-priv/keys 
+cd vendor/superior-priv/keys
+./gen_keys
+cd ../../..
+
 # Export
 export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
@@ -42,4 +48,4 @@ echo "============="
 
 # Lunch
 breakfast mi439
-m bacon
+mka bacon || m bacon
