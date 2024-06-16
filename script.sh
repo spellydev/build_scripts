@@ -20,6 +20,15 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# Cherry-pick stuff
+
+# usb notification fix
+cd frameworks/base
+git fetch superior --unshallow
+git fetch https://github.com/DerpFest-AOSP/frameworks_base 14
+git cherry-pick 56dc92f
+cd ../..
+
 # Export
 export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
