@@ -47,5 +47,5 @@ echo "============="
 # repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
 # Lunch
-breakfast mi439
+lunch superior_mi439-ap1a-userdebug || lunch superior_mi439-userdebug || breakfast mi439
 mka bacon || m bacon
