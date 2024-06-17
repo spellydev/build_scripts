@@ -25,7 +25,7 @@ echo "============="
 # usb notification fix
 cd frameworks/base
 git fetch superior --unshallow
-git fetch https://github.com/RisingTechOSS/android_frameworks_base.git fourteen
+git fetch https://github.com/RisingTechOSS/android_frameworks_base fourteen
 git cherry-pick dc6e10f
 git cherry-pick 80a8c0f
 cd ../..
