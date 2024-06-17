@@ -58,4 +58,5 @@ echo "======= ENV setup success ======"
 
 # Lunch
 lunch superior_mi439-ap1a-userdebug || lunch superior_mi439-userdebug || breakfast mi439
+make installclean
 mka bacon || m bacon
