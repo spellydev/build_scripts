@@ -28,13 +28,14 @@ git fetch superior --unshallow
 git fetch https://github.com/RisingTechOSS/android_frameworks_base fourteen
 git cherry-pick dc6e10f
 git cherry-pick 80a8c0f
+git cherry-pick ff7e317
 cd ../..
 
 # Signing
-git clone https://github.com/Phantm7/android_vendor_superior-priv_keys-template.git vendor/superior-priv/keys 
-cd vendor/superior-priv/keys
-./gen_keys
-cd ../../..
+#git clone https://github.com/Phantm7/android_vendor_superior-priv_keys-template.git vendor/superior-priv/keys 
+#cd vendor/superior-priv/keys
+#./gen_keys
+#cd ../../..
 
 # Export
 export BUILD_USERNAME=Phantom
