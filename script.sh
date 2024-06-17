@@ -31,6 +31,14 @@ git cherry-pick 80a8c0f
 git cherry-pick ff7e317
 cd ../..
 
+
+# keys
+
+git clone https://github.com/Phantm7/build_keys.git -b sup-keys vendor/superior-priv
+echo "============="
+echo "Keys copied"
+echo "============="
+
 # Signing
 #git clone https://github.com/Phantm7/android_vendor_superior-priv_keys-template.git vendor/superior-priv/keys 
 #cd vendor/superior-priv/keys
@@ -40,11 +48,11 @@ cd ../..
 # Export
 export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
-echo "============="
+echo "====== Export success ======="
 
 # Set up build environment
 source build/envsetup.sh
-echo "============="
+echo "======= ENV setup success ======"
 # Setup Git LFS
 # repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
