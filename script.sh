@@ -25,10 +25,12 @@ echo "============="
 # usb notification fix
 cd frameworks/base
 git fetch superior --unshallow
-git fetch https://github.com/DerpFest-AOSP/frameworks_base 14
-git cherry-pick 56dc92f
+git fetch https://github.com/RisingTechOSS/android_frameworks_base.git fourteen
+git cherry-pick dc6e10f
+git cherry-pick 80a8c0f
 cd ../..
 
+80a8c0f
 # Signing
 git clone https://github.com/Phantm7/android_vendor_superior-priv_keys-template.git vendor/superior-priv/keys 
 cd vendor/superior-priv/keys
