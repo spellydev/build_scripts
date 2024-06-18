@@ -20,6 +20,14 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+echo "===== Cherry-pick stuff started ====="
+cd packages/apps/Updater
+git fetch rising --unshallow
+git fetch https://github.com/Phantm7/android_packages_apps_Updater fourteen
+git cherry-pick 022c468
+cd ../../..
+echo "===== Cherry-pick Ended ====="
+
 # keys
 rm -rf vendor/lineage-priv
 git clone https://github.com/Phantm7/build_keys.git -b sup-keys vendor/lineage-priv
