@@ -21,11 +21,21 @@ echo "Sync success"
 echo "============="
 
 # keys
-git clone https://github.com/Phantm7/build_keys.git -b keys build_keys
-cp build_keys/* vendor/rising/signing/keys
+rm -rf vendor/lineage-priv
+git clone https://github.com/Phantm7/build_keys.git -b sup-keys vendor/lineage-priv
 echo "============="
 echo "Keys copied"
 echo "============="
+
+# Remove overrides
+# Define a list of packages to remove
+echo "===== Remove overrides started ====="
+
+OVER_PACKAGES=("GoogleContacts" "GoogleDialer" "PrebuiltBugle")
+for PACKAGEU in "${OVER_PACKAGES[@]}"; do
+find vendor/gms -name 'common-vendor.mk' -exec sed -i "/$PACKAGEU/d" {} \;
+done
+echo "===== Remove overrides Success ====="
 
 # Export
 export BUILD_USERNAME=Phantom
