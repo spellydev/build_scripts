@@ -30,7 +30,7 @@ echo "===== Cherry-pick Ended ====="
 
 # keys
 rm -rf vendor/lineage-priv
-git clone https://github.com/Phantm7/build_keys.git -b sup-keys vendor/lineage-priv
+git clone https://github.com/Phantm7/build_keys.git -b lin-keys vendor/lineage-priv
 echo "============="
 echo "Keys copied"
 echo "============="
