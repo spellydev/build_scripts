@@ -50,7 +50,10 @@ export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
-# Set up
-git clone https://github.com/Phantm7/genesis-scripts.git -b main gen-scripts
-chmod +x gen-scripts/build_and_sign.sh
-./gen-scripts/build_and_sign.sh
+# Set up build environment
+source build/envsetup.sh
+echo "====== Envsetup Done ======="
+
+# Lunch
+riseup mi439 userdebug
+rise b
