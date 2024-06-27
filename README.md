@@ -6,7 +6,7 @@ curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/blaze-14-mclo
 
 ### For crave
 ```
-crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/blaze-14-mclo/script.sh | bash"
+crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/Gtajisan/build_scripts/PixelOS-mclo/script.sh | bash"
 ```
 ## crave shit run
 ```
