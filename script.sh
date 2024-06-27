@@ -1,14 +1,14 @@
 rm -rf .repo/local_manifests/
 
 #repo init rom
-repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR2
+repo init --depth=1 -u https://github.com/PixelOS-Pixelish/manifest -b eleven
 
 #Local manifests
-git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-blaze .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b Udc-2-pixelOS .repo/local_manifests
 
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
-lunch blaze_mi439-userdebug || lunch blaze_mi439-ap1a-userdebug
-make installclean
-make bacon
+lunch aosp_mi439-userdebug || lunch aosp_mi439-ap1a-userdebug
+mka bacon -jX
+mka bacon
