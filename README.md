@@ -6,5 +6,5 @@ curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/evo-14-mclo/s
 
 ### For crave
 ```
-crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/evo-14-mclo/script.sh | bash"
+crave run --no-patch -- "curl https://raw.githubusercontent.com/Gtajisan/build_scripts/evo-14-mclo/script.sh | bash"
 ```
