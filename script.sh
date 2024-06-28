@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-echo "===== hey Farhan sir your fukin# rom running ====="
+echo "===== hey Farhan sir your fukin& rom running ====="
 repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14
 echo "=============================="
 echo "gay DerpFest Repo init success"
