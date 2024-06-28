@@ -7,5 +7,5 @@ curl https://raw.githubusercontent.com/PntmX/build_scripts/derp-14-mclo/script.s
 
 ### For crave
 ```
-crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/PntmX/build_scripts/derp-14-mclo/script.sh | bash"
+crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/Gtajisan/build_scripts/derp-14-mclo/script.sh | bash"
 ```
