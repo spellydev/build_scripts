@@ -4,24 +4,24 @@ rm -rf .repo/local_manifests/
 
 # repo init rom
 repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14
-echo "=================="
-echo "Repo init success"
-echo "=================="
+echo "=============================="
+echo "gay DerpFest Repo init success"
+echo "=============================="
 
 # Local manifests
-git clone https://github.com/PntmX/local_manifests_clo -b udc-2-derp .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
+git clone https://github.com/Gtajisan/local_manifests_clo -b udc-2-derp .repo/local_manifests
+echo "========================================="
+echo "Fuckin# shit Local manifest clone success"
+echo "========================================="
 
 # build
 /opt/crave/resync.sh
-echo "============="
-echo "Sync success"
-echo "============="
+echo "======================"
+echo "Sync successfully Done"
+echo "======================"
 
 # keys
-git clone https://github.com/PntmX/build_keys.git -b keys build_keys
+git clone https://github.com/Gtajisan/build_keys.git -b keys build_keys
 cp build_keys/* vendor/derp/signing/keys
 echo "============="
 echo "Keys copied"
@@ -37,13 +37,15 @@ for PACKAGEU in "${OVER_PACKAGES[@]}"; do
 done
 echo "===== Remove overrides Success ====="
 # Export
-export BUILD_USERNAME=Phantom
+export BUILD_USERNAME=Gtajisan
 export BUILD_HOSTNAME=crave
 echo "============="
 
 # Set up build environment
 source build/envsetup.sh
-echo "============="
+echo "======================================"
+echo "im craven Farhan sir you rom sync Done"
+echo "======================================"
 # Setup Git LFS
 # repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
