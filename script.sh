@@ -2,7 +2,7 @@ rm -rf .repo/local_manifests/
 #repo init rom
 repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
 #Local manifests
-git clone https://github.com/PhantomEnigma/local_manifests .repo/local_manifests -b a14
+git clone https://github.com/Gtajisan/local_manifests .repo/local_manifests -b a14
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
