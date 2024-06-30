@@ -35,6 +35,15 @@ echo "============="
 echo "Keys copied"
 echo "============="
 
+# Remove overrides
+# Define a list of packages to remove
+echo "===== Remove overrides started ====="
+
+OVER_PACKAGES=("GoogleContacts" "GoogleDialer" "PrebuiltBugle" "dialer")
+for PACKAGEU in "${OVER_PACKAGES[@]}"; do
+find vendor/gms -name 'common-vendor.mk' -exec sed -i "/$PACKAGEU/d" {} \;
+done
+echo "===== Remove overrides Success ====="
 
 # Export
 export BUILD_USERNAME=Gtajisan
