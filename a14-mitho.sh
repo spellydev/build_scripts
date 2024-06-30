@@ -1,12 +1,12 @@
 rm -rf .repo/local_manifests/
 #repo init rom
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 #Local manifests
-git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b lineage-21 .repo/local_manifests
 
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
-riseup mi439 userdebug 
+lineage Mi439 userdebug || lunch lineage_Mi439-userdebug || lunch lineage_Mi439-ap1a-userdebug || lunch lineage_mi439-userdebug || lunch lineage_mi439-ap1a-userdebug
 make installclean
-rise b
+mka bacon
