@@ -1,9 +1,47 @@
+l#!/bin/bash
+
 rm -rf .repo/local_manifests/
-#repo init rom
-repo init -u https://github.com/BlissRoms/platform_manifest.git -b universe --git-lfs
-#Local manifests
-git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-bliss .repo/local_manifests
-#build
+
+# repo init rom
+repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR3
+echo "=================="
+echo "Repo init success"
+echo "=================="
+
+# Local manifests
+git clone https://github.com/Gtajisan/local_manifests -b a14-projectblaze .repo/local_manifests
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
+
+# build
 /opt/crave/resync.sh
-. build/envsetup.sh
-blissify -c -v mi439 || blissify -c -v bliss_mi439
+echo "============="
+echo "Sync success"
+echo "============="
+
+# keys
+rm -rf vendor/extra
+git clone https://github.com/PhantomEnigma/build_keys.git -b blaze-keys vendor/extra
+echo "============="
+echo "Keys copied"
+echo "============="
+
+# Export
+export BUILD_USERNAME=Phantom
+export BUILD_HOSTNAME=crave
+echo "======= Export Done ======"
+
+# Set up build environment
+source build/envsetup.sh
+echo "====== Envsetup Done ======="
+
+# Lunch
+lunch blaze_Mi439_4_19-ap1a-userdebug || lunch blaze_Mi439_4_19-userdebug
+echo "============="
+# Make cleaninstall
+make installclean
+echo "============="
+
+# Build rom
+mka bacon
