@@ -36,7 +36,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch blaze_Mi439_4_19-ap1a-userdebug || lunch blaze_Mi439_4_19-userdebug
+lunch aosp_Mi439_4_19-ap1a-userdebug || lunch aosp_Mi439_4_19-userdebug || lunch aosp_Mi439_4_19-userdebug
 echo "============="
 # Make cleaninstall
 make installclean
