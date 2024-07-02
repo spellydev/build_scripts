@@ -22,7 +22,7 @@ echo "Sync successfully Done"
 echo "======================"
 
 # keys
-git clone https://github.com/Gtajisan/build_keys.git -b keys build_keys
+git clone https://github.com/PntmX/build_keys.git -b keys build_keys
 cp build_keys/* vendor/derp/signing/keys
 echo "============="
 echo "Keys copied"
@@ -38,7 +38,7 @@ for PACKAGEU in "${OVER_PACKAGES[@]}"; do
 done
 echo "===== Remove overrides Success ====="
 # Export
-export BUILD_USERNAME=Gtajisan
+export BUILD_USERNAME=Phantom
 export BUILD_HOSTNAME=crave
 echo "============="
 
