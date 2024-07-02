@@ -1,4 +1,4 @@
-l#!/bin/bash
+#!/bin/bash
 
 rm -rf .repo/local_manifests/
 
@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b a14-projectblaze .repo/local_manifests
+git clone https://github.com/PhantomEnigma/local_manifests -b a14-projectblaze .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -21,7 +21,6 @@ echo "Sync success"
 echo "============="
 
 # keys
-rm -rf vendor/extra
 git clone https://github.com/PhantomEnigma/build_keys.git -b blaze-keys vendor/extra
 echo "============="
 echo "Keys copied"
