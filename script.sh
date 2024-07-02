@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b a14-projectblaze .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b a14-projectblaze .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -27,7 +27,7 @@ echo "Keys copied"
 echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN 439
+export BUILD_USERNAME=FARHAN 
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
