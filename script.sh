@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/PhantomEnigma/local_manifests -b a14-projectblaze .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b a14-projectblaze .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
