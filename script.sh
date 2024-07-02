@@ -3,19 +3,19 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR3
+repo init --depth=1 -u https://github.com/Project-Elixir/manifest -b UNO --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b a14-projectblaze .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b Project-Elixir .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
 # build
-/opt/crave/resync.sh
+/opt/crave/resync.sh || . build/envsetup.sh
 echo "============="
 echo "Sync success"
 echo "============="
