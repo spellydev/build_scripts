@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b a14-projectblaze .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b Alpha-droid .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -36,7 +36,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch blaze_Mi439_4_19-ap1a-userdebug || lunch blaze_Mi439_4_19-userdebug
+lunch lineage_Mi439_4_19-ap1a-userdebug || lunch lineage_Mi439_4_19-userdebug
 echo "============="
 # Make cleaninstall
 make installclean
