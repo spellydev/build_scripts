@@ -1,14 +1,46 @@
+#!/bin/bash
+
 rm -rf .repo/local_manifests/
 
-#repo init rom
-repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR2
+# repo init rom
+repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR3
+echo "=================="
+echo "Repo init success"
+echo "=================="
 
-#Local manifests
-git clone https://github.com/PhantomEnigma/local_manifests_clo -b udc-2-blaze .repo/local_manifests
+# Local manifests
+git clone https://github.com/Gtajisan/local_manifests -b ProjectSakura .repo/local_manifests
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
 
-#build
+# build
 /opt/crave/resync.sh
-. build/envsetup.sh
-lunch blaze_mi439-userdebug || lunch blaze_mi439-ap1a-userdebug
+echo "============="
+echo "Sync success"
+echo "============="
+
+# keys
+git clone https://github.com/PhantomEnigma/build_keys.git -b blaze-keys vendor/extra
+echo "============="
+echo "Keys copied"
+echo "============="
+
+# Export
+export BUILD_USERNAME=Gtajisan
+export BUILD_HOSTNAME=crave
+echo "======= Export Done ======"
+
+# Set up build environment
+source build/envsetup.sh
+echo "====== Envsetup Done ======="
+
+# Lunch
+lunch blaze_Mi439_4_19-ap1a-userdebug || lunch blaze_Mi439_4_19-userdebug
+echo "============="
+# Make cleaninstall
 make installclean
-make bacon
+echo "============="
+
+# Build rom
+mka bacon
