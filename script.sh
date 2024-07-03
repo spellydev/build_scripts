@@ -3,7 +3,8 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR3
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
+
 echo "=================="
 echo "Repo init success"
 echo "=================="
