@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR3
+repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b Project-Sakura .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b ProjectSakura .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -36,7 +36,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineagee_Mi439_4_19-ap1a-userdebug || lunch lineage_Mi439_4_19-userdebug
+lunch lineage__Mi439_4_19-ap2a-userdebug || lunch lineage_Mi439_4_19-userdebug
 echo "============="
 # Make cleaninstall
 make installclean
