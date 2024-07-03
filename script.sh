@@ -10,9 +10,9 @@ echo "=================="
 
 # Local manifests
 git clone https://github.com/Gtajisan/local_manifests_clo -b udc-2-rising .repo/local_manifests
-echo "================================================="
-echo "hey frn your fucking Local manifest clone success"
-echo "================================================="
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
 
 # build
 /opt/crave/resync.sh
