@@ -31,6 +31,7 @@ echo "============="
 export BUILD_USERNAME=FARHAN-MUH-TASIM
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
+export TZ=Asia/Dhaka
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -38,11 +39,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch evolution_Mi439_4_19-user || lunch evolution_Mi439_4_19-ap1a-userdebug
-echo "============="
-
-# Make cleaninstall
-make installclean
+lunch evolution_Mi439_4_19-user 
 echo "============="
 
 # Build rom
