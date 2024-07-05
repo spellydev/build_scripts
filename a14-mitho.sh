@@ -39,7 +39,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch evolution_Mi439_4_19-user 
+lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap1a-userdebug
 echo "============="
 
 # Build rom
