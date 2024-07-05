@@ -24,13 +24,8 @@ echo "======= Export Done ======"
 source build/envsetup.sh 
 echo "====== Envsetup Done ======="
 
-
 # Lunch
 lunch nad_Mi439_4_19-user 
-echo "============="
-
-# Make cleaninstall
-make installclean
 echo "============="
 
 # Build rom
