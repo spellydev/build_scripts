@@ -27,7 +27,6 @@ echo "============="
 export BUILD_USERNAME=FARHAN-MUH-TASIM
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
-export TZ=Asia/Dhaka
 echo "======= Export Done ======"
 
 # Set up build environment
