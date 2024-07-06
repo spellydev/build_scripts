@@ -1,5 +1,9 @@
 #!/bin/bash
+
+
 rm -rf .repo/local_manifests/
+
+
 
 #repo init rom
 repo init -u https://github.com/NusantaraProject-ROM/android_manifest -b 11 --git-lfs
@@ -26,6 +30,10 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 lunch nad_Mi439_4_19-user 
+echo "============="
+
+# Make cleaninstall
+make installclean
 echo "============="
 
 # Build rom
