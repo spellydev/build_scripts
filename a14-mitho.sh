@@ -6,7 +6,7 @@ rm -rf .repo/local_manifests/
 
 
 #repo init rom
-repo init -u https://github.com/NusantaraProject-ROM/android_manifest -b 11 --git-lfs
+repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 11
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -29,7 +29,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch nad_Mi439_4_19-user 
+lunch lineage_Mi439_4_19-user || lunch lineage_Mi439_4_19-eng 
 echo "============="
 
 # Make cleaninstall
@@ -37,4 +37,4 @@ make installclean
 echo "============="
 
 # Build rom
-mka nad
+mka bacon || mka bacon -jx
