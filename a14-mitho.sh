@@ -17,6 +17,12 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
+# build
+/opt/crave/resync.sh || repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j `nproc`
+echo "============="
+echo "Sync success"
+echo "============="
+
 # Export
 export BUILD_USERNAME=FARHAN-MUH-TASIM
 export BUILD_HOSTNAME=crave
