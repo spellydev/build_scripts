@@ -4,6 +4,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
+sudo apt install git-lfs git lfs install ;
 repo init -u https://github.com/Evolution-XYZ/manifest -b udc --git-lfs
 echo "=================="
 echo "Repo init success"
