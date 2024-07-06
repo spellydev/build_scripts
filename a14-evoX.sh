@@ -15,7 +15,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # build
-/opt/crave/resync.sh
+/opt/crave/resync.sh || repo sync
 echo "============="
 echo "Sync success"
 echo "============="
@@ -33,11 +33,11 @@ export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
 # Set up build environment
-source build/envsetup.sh
+source build/envsetup.sh || . build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap1a-userdebug
+lunch lineage_Mi439_4_19-user || lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap1a-userdebug
 echo "============="
 
 # Make cleaninstall
