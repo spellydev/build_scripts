@@ -27,11 +27,13 @@ git cherry-pick f0052a5
 cd ../../..
 
 # keys
-# mkdir vendor/lineage-priv
-# cp build-keys/* vendor/lineage-priv
-# echo "============="
-# echo "Keys copied"
-# echo "============="
+croot && git clone https://github.com/Evolution-XYZ/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+mkdir vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+./generate.sh
+echo "============="
+echo "Keys copied"
+echo "============="
 
 # Export
 export BUILD_USERNAME=FARHAN
@@ -43,7 +45,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_Mi439_4_19-ap1a-userdebug || lunch lineage_Mi439_4_19-userdebug 
+lunch lunch lineage_Mi439_4_19-user || lunch lineage_Mi439_4_19-userdebug 
 echo "============="
 
 # Make cleaninstall
