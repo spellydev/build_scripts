@@ -22,8 +22,8 @@ echo "Sync successfully Done"
 echo "======================"
 
 # keys
-git clone https://github.com/PntmX/build_keys.git -b keys build_keys
-cp build_keys/* vendor/derp/signing/keys
+git clone https://github.com/DerpFest-AOSP/vendor_derp.git -b 14 vendor_derp
+cp vendor_derp/* signing/keys/BUILD
 echo "============="
 echo "Keys copied"
 echo "============="
