@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-echo "===== hey Farhan sir your fukin& rom running ====="
+
 
 # repo init rom
 repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14
