@@ -18,7 +18,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # build
-/opt/crave/resync.sh || repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j `nproc`
+/opt/crave/resync.sh  
 echo "============="
 echo "Sync success"
 echo "============="
@@ -42,4 +42,4 @@ make installclean
 echo "============="
 
 # Build rom
-mka bacon || mka bacon -jx
+mka bacon 
