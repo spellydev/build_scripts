@@ -36,7 +36,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap1a-userdebug
+lunch lunch lineage_Mi439-user || lunch lineage_Mi439_4_19-user
 echo "============="
 
 # Make cleaninstall
