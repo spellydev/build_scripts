@@ -10,7 +10,7 @@ echo "gay DerpFest Repo init success"
 echo "=============================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b udc-2-a14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b udc-2-derp .repo/local_manifests
 echo "========================================="
 echo "Fuckin# shit Local manifest clone success"
 echo "========================================="
