@@ -37,6 +37,7 @@ for PACKAGEU in "${OVER_PACKAGES[@]}"; do
   find vendor/gms -name 'Android.mk' -exec sed -i "/^LOCAL_OVERRIDES_PACKAGES := $PACKAGEU$/d" {} \;
 done
 echo "===== Remove overrides Success ====="
+
 # Export
 export BUILD_USERNAME=FARHAN_shit
 export BUILD_HOSTNAME=crave
@@ -53,8 +54,10 @@ echo "======================================"
 # Lunch
 lunch derp_mi439-ap1a-userdebug || lunch derp_mi439-userdebug
 echo "============="
+
 # Make cleaninstall
 make installclean
 echo "============="
+
 # Build rom
 mka derp
