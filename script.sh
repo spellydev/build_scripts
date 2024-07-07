@@ -23,7 +23,7 @@ echo "======================"
 
 # keys
 git clone https://github.com/DerpFest-AOSP/vendor_derp.git -b 14 vendor_derp
-cp vendor_derp/* signing/keys/BUILD
+cp vendor_derp/* signing/keys
 echo "============="
 echo "Keys copied"
 echo "============="
