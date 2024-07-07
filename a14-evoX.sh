@@ -26,13 +26,6 @@ git fetch https://github.com/ProjectBlaze/packages_apps_Dialer.git 14
 git cherry-pick f0052a5
 cd ../../..
 
-# keys
-# mkdir vendor/lineage-priv
-# cp build-keys/* vendor/lineage-priv
-# echo "============="
-# echo "Keys copied"
-# echo "============="
-
 # Export
 export BUILD_USERNAME=FARHAN
 export BUILD_HOSTNAME=crave
