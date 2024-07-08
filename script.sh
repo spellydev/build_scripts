@@ -35,6 +35,7 @@ echo "===== Remove overrides Success ====="
 # Export
 export BUILD_USERNAME=FARHAN_shit
 export BUILD_HOSTNAME=crave
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "============="
 
 # Set up build environment
