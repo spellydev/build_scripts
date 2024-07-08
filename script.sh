@@ -21,12 +21,6 @@ echo "======================"
 echo "Sync successfully Done"
 echo "======================"
 
-# keys
-git clone https://github.com/DerpFest-AOSP/vendor_derp.git -b 14 vendor_derp
-cp vendor_derp/* signing/keys
-echo "============="
-echo "Keys copied"
-echo "============="
 
 # Remove overrides
 # Define a list of packages to remove
