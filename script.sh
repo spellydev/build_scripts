@@ -14,11 +14,9 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# build
+# Sync the repositories
 /opt/crave/resync.sh
-echo "============="
-echo "Sync success"
-echo "============="
+echo "============================"
 
 # Export
 export BUILD_USERNAME=FARHAN
@@ -31,11 +29,16 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_Mi439_4_19-ap2a-userdebug || lunch lineage_Mi439_4_19-userdebug
+lunch lineage_Mi439_4_19-ap2a-user
 echo "============="
+
 # Make cleaninstall
 make installclean
 echo "============="
 
 # Build rom
 mka bacon
+
+
+
+
