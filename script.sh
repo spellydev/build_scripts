@@ -24,16 +24,13 @@ export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
+
 # Set up build environment
-. build/envsetup.sh
+source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
 lunch afterlife_Mi439_4_19-uerdebug
-echo "============="
-
-# Make cleaninstall
-make installclean
 echo "============="
 
 # Build rom
