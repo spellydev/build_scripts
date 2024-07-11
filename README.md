@@ -1,7 +1,7 @@
 # build_scripts
 
 ```
-curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/matrixx-14-mtho/script.sh | bash
+curl https://raw.githubusercontent.com/PhantomEnigma/build_scripts/afterlife/script.sh | bash
 ```
 
 ### For crave
