@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b a14-matx .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b afterlife .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -25,11 +25,11 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
 # Set up build environment
-source build/envsetup.sh
+. build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_Mi439_4_19-ap2a-user
+lunch afterlife_Mi439_4_19-uerdebug
 echo "============="
 
 # Make cleaninstall
@@ -37,7 +37,9 @@ make installclean
 echo "============="
 
 # Build rom
-mka bacon
+m afterlife
+
+
 
 
 
