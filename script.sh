@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/ || { echo "Failed to remove local_manifests"; exit
 
 # Initialize ProjectBlaze repo
 echo "Initializing ProjectBlaze repo..."
-repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR3 || { echo "Repo init failed"; exit 1; }
+repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-lfs || { echo "Repo init failed"; exit 1; }
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
