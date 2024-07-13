@@ -29,7 +29,7 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-brunch Mi439_4_19 user
+brunch Mi439_4_19 userdebug
 echo "============="
 
 # Make cleaninstall
