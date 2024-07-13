@@ -1,51 +1,36 @@
-
+#ProjectSakura build script
 #!/bin/bash
 
-rm -rf .repo/local_manifests/
+# Remove existing local_manifests
+echo "Removing existing local_manifests..."
+rm -rf .repo/local_manifests/ || { echo "Failed to remove local_manifests"; exit 1; }
 
-# repo init rom
-sudo apt install git-lfs git lfs install ;
-repo init -u https://github.com/Evolution-XYZ/manifest -b udc --git-lfs
-echo "=================="
-echo "Repo init success"
-echo "=================="
+# Initialize ProjectBlaze repo
+echo "Initializing ProjectBlaze repo..."
+repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR3 || { echo "Repo init failed"; exit 1; }
 
-# Local manifests
-git clone https://github.com/Gtajisam/local_manifests -b Project-Sakura .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
+# Clone local_manifests repository
+echo "Cloning local_manifests repository..."
+git clone https://github.com/Gtajisam/local_manifests -b Project-Sakura .repo/local_manifests || { echo "Cloning local_manifests failed"; exit 1; }
 
-# build
-/opt/crave/resync.sh
-echo "============="
-echo "Sync success"
-echo "============="
+# Sync the repositories
+echo "Syncing the repositories..."
+/opt/crave/resync.sh || { echo "Resync failed"; exit 1; }
 
-# keys
-# mkdir vendor/lineage-priv
-# cp build-keys/* vendor/lineage-priv
-# echo "============="
-# echo "Keys copied"
-# echo "============="
-
-
-# Export
+# Set build details
 export BUILD_USERNAME=FARHAN-MUH-TASIM
 export BUILD_HOSTNAME=crave
-echo "======= Export Done ======"
 
 # Set up build environment
-source build/envsetup.sh
-echo "====== Envsetup Done ======="
+echo "Setting up build environment..."
+. build/envsetup.sh || { echo "Envsetup failed"; exit 1; }
 
-# Lunch
-lunch lineage_Mi439_4_19-ap2a-userdebug || lunch lineage_Mi439_4_19-ap1a-userdebug
-echo "============="
+# Lunch configuration
+echo "Configuring lunch..."
+lunch lineage_Mi439_4_19-ap2a-userdebug || { echo "Lunch configuration failed"; exit 1; }
 
-# Make cleaninstall
-make installclean
-echo "============="
+# Build the ProjectBlaze
+echo "Building ProjectBlaze..."
+make bacon || { echo "Build failed"; exit 1; }
 
-# Build rom
-mka bacon
+echo "Build completed successfully!"
