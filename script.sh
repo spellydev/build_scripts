@@ -20,11 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-# keys
-git clone https://github.com/PhantomEnigma/build_keys.git -b blaze-keys vendor/extra
-echo "============="
-echo "Keys copied"
-echo "============="
 
 # Export
 export BUILD_USERNAME=FARHAN•XD
