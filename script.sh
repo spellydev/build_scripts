@@ -11,7 +11,7 @@ repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs 
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-git clone https://github.com/Gtajisam/local_manifests -b Project-Sakura .repo/local_manifests || { echo "Cloning local_manifests failed"; exit 1; }
+git clone https://github.com/MisterZtr/treble_manifest.git .repo/local_manifests  -b 14 || { echo "Cloning local_manifests failed"; exit 1; }
 
 # Sync the repositories
 echo "Syncing the repositories..."
