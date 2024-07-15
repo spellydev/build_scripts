@@ -20,6 +20,7 @@ echo "Syncing the repositories..."
 # Set build details
 export BUILD_USERNAME=FARHAN-MUH-TASIM
 export BUILD_HOSTNAME=crave
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export MATRIXX_MAINTAINER=FARHAB!gsi
 
 
@@ -33,6 +34,6 @@ lunch treble_arm64_bN-ap2a-userdebug || { echo "Lunch configuration failed"; exi
 
 # Build the matrixx
 echo "Building matrixx..."
-make bacon || { echo "Build failed"; exit 1; }
+make systemimage || { echo "Build failed"; exit 1; }
 
 echo "matrixx Build completed successfully!"
