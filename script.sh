@@ -20,7 +20,7 @@ echo "Syncing the repositories..."
 # Set build details
 export BUILD_USERNAME=FARHAN-MUH-TASIM
 export BUILD_HOSTNAME=crave
-export
+export MATRIXX_MAINTAINER=FARHAB!gsi
 
 
 # Set up build environment
