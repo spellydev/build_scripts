@@ -27,7 +27,7 @@ echo "Setting up build environment..."
 
 # Lunch configuration
 echo "Configuring lunch..."
-lunch lineage_Mi439_4_19-ap2a-userdebug || { echo "Lunch configuration failed"; exit 1; }
+lunch treble_arm64_bN-ap2a-userdebug || { echo "Lunch configuration failed"; exit 1; }
 
 # Build the PixelOS
 echo "Building ProjectBlaze..."
