@@ -17,8 +17,7 @@ git clone https://github.com/MisterZtr/treble_manifest.git .repo/local_manifests
 echo "Syncing the repositories..."
 /opt/crave/resync.sh || { echo "Resync failed"; exit 1; }
 
-#Next apply patches
-bash patches/apply-patches.sh .
+
 
 # Set build details
 export BUILD_USERNAME=FARHAN-MUH-TASIM
