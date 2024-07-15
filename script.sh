@@ -37,7 +37,7 @@ make installclean
 echo "============="
 
 # Build rom
-mka bacon
+make systemimage
 
 
 
