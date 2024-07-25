@@ -22,7 +22,6 @@ echo "============="
 # Export
 export BUILD_USERNAME=FARHAN•xd
 export BUILD_HOSTNAME=crave
-export MITHORIUM_QCOM_HALS_DEFAULT_VARIANT=LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -30,6 +29,4 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch aosp_Mi439_4_19-ap2a-userdebug
-make installclean
-mka bacon
+lunch aosp_Mi439_4_19-ap2a-userdebug && make installclean && mka bacon
