@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests/
 
-repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
+repo init -u https://github.com/Evolution-XYZ/manifest -b udc --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
