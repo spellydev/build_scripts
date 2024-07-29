@@ -2,13 +2,13 @@
 
 rm -rf .repo/local_manifests/
 
-repo init -u https://github.com/Evolution-XYZ/manifest -b udc --git-lfs
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b Matrixx-14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b alpha-droid-14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
