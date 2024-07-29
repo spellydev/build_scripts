@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch blaze_Mi439_4_19-ap1a-userdebug || lunch blaze_Mi439_4_19-userdebug
+lunch droidx_Mi439_4_19-ap2a-userdebug
 echo "============="
 # Make cleaninstall
 make installclean
