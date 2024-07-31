@@ -29,7 +29,9 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # lunch command (vanilla)
-goafterlife Mi439_4_19
+goafterlife Mi439_4_19 userdebug
+echo "====== your vanilla build successfully ====="
 
 # lunch command (core gapps)
-goafterlife Mi439
+goafterlife Mi439 userdebug
+echo "====== gapss build Done ======="
