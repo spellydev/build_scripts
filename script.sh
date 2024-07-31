@@ -2,13 +2,13 @@
 
 rm -rf .repo/local_manifests/
 
-repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-lfs
+repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b Project-Sakura .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b afterlife .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
