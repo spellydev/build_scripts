@@ -28,6 +28,7 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# lunch command 
+# lunch command (vanilla)
 goafterlife Mi439_4_19
-
+# lunch command (core gapps)
+goafterlife Mi439
