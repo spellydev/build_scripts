@@ -32,6 +32,4 @@ echo "====== Envsetup Done ======="
 goafterlife Mi439_4_19 userdebug
 echo "====== your vanilla build successfully ====="
 
-# lunch command (core gapps)
-goafterlife Mi439 userdebug
-echo "====== gapss build Done ======="
+
