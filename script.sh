@@ -34,6 +34,6 @@ cd ../..
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
+# lunch command 
 goafterlife Mi439_4_19
-make installclean
-mka bacon
+
