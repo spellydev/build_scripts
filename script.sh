@@ -24,12 +24,6 @@ export BUILD_USERNAME=FARHAN
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
-#Cherry-pick
-cd vendor/addons
-git fetch 14.0 --unshallow
-git fetch https://github.com/RisingTechOSS/android_vendor_addons.git fourteen
-git cherry-pick dbd659e
-cd ../..
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
