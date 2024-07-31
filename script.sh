@@ -30,6 +30,5 @@ echo "====== Envsetup Done ======="
 
 # lunch command (vanilla)
 goafterlife Mi439_4_19 userdebug
-echo "====== your vanilla build successfully ====="
 
 
