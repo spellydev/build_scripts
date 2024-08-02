@@ -29,7 +29,10 @@ echo "======= Export Done ======"
 . build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-goafterlife Mi439_4_19 userdebug
+# lunch fumking
+lunch afterlife_Mi439_4_19-userdebug
+make installclean 
+m afterlife
 
 
 
