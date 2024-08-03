@@ -14,6 +14,10 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
+cd .repo/repo
+git pull -r
+cd ../..
+
 # Sync the repositories  
 # /opt/crave/resync.sh 
 /opt/crave/resynctest.sh
@@ -36,6 +40,17 @@ git fetch 14.0 --unshallow
 git fetch https://github.com/RisingTechOSS/android_vendor_addons.git fourteen
 git cherry-pick dbd659e
 cd ../..
+
+# Remove overrides
+# Define a list of packages to remove
+echo "===== Remove overrides started ====="
+
+OVER_PACKAGES=("GoogleContacts" "GoogleDialer" "PrebuiltBugle" "dialer")
+for PACKAGEU in "${OVER_PACKAGES[@]}"; do
+find vendor/gms -name 'common-vendor.mk' -exec sed -i "/$PACKAGEU/d" {} \;
+done
+echo "===== Remove overrides Success ====="
+
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
