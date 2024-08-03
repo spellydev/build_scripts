@@ -2,7 +2,8 @@
 
 rm -rf .repo/local_manifests/
 
-repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
+# Init Rom Manifest
+repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -13,16 +14,21 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Sync
-/opt/crave/resync.sh
-echo "============="
-echo "Sync success"
-echo "============="
+# Sync the repositories  
+# /opt/crave/resync.sh 
+/opt/crave/resynctest.sh
+ echo "====== resynctest Done ======="
 
-# Export
-export BUILD_USERNAME=FARHAN
-export BUILD_HOSTNAME=crave
-echo "======= Export Done ======"
+# Set up build environment
+export BUILD_USERNAME=FARHAN 
+export BUILD_HOSTNAME=crave 
+
+
+# Signing (credits sale)
+curl -O https://raw.githubusercontent.com/Gtajisan/crDroid-build-signed-script/crdroid/create-signed-env.sh
+chmod +x create-signed-env.sh
+./create-signed-env.sh
+echo "====== signing Done ======="
 
 #Cherry-pick
 cd vendor/addons
