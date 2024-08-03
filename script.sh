@@ -22,7 +22,7 @@ echo "============================"
 # Set up build environment
 export BUILD_USERNAME=FARHAN 
 export BUILD_HOSTNAME=crave 
-
+echo "======= Export Done ======"
 
 # Signing (credits sale)
 curl -O https://raw.githubusercontent.com/Gtajisan/crDroid-build-signed-script/crdroid/create-signed-env.sh
