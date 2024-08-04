@@ -37,7 +37,7 @@ echo "====== signing Done ======="
 #Cherry-pick
 cd vendor/addons
 git fetch 14.0 --unshallow
-git fetch https://github.com/RisingTechOSS/android_vendor_addons.git fourteen
+git fetch https://github.com/AfterlifeOS/vendor_afterlife.git 14
 git cherry-pick dbd659e
 cd ../..
 
