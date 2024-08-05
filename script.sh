@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup Mi439 userdebug
+riseup Mi439_4_19 userdebug
 echo "============="
 
 # Build rom
