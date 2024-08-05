@@ -30,11 +30,15 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch afterlife_Mi439_4_19-uerdebug
+lunch afterlife_Mi439_4_19-userdebug
+echo "============="
+
+# Make cleaninstall
+make installclean
 echo "============="
 
 # Build rom
-m afterlife
+mka bacon
 
 
 
