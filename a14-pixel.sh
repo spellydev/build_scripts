@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests/
 
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
+repo init --depth=1 -u https://github.com/Project-Elixir/manifest -b UNO
 echo "=================="
 echo "Repo init success"
 echo "=================="
