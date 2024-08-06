@@ -13,17 +13,22 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Sync
-/opt/crave/resync.sh
-echo "============="
-echo "Sync success"
-echo "============="
+# Sync the repositories  
+# /opt/crave/resync.sh 
+/opt/crave/resynctest.sh
+ echo "====== resynctest Done ======="
 
 # Export
-export BUILD_USERNAME=FARHAN•xd
+export BUILD_USERNAME=FARHAN_SENSI
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
+#Cherry-pick
+cd vendor/addons
+git fetch crdroid --unshallow
+git fetch https://github.com/RisingTechOSS/android_vendor_addons fourteen
+git cherry-pick dbd659e
+cd ../..
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
