@@ -25,7 +25,7 @@ echo "======= Export Done ======"
 
 
 # Set up build environment
-#source build/envsetup.sh
+# source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
