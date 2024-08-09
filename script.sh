@@ -30,10 +30,8 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup Mi8937 userdebug
-rise b
-
-# luch 2
-. build/envsetup.sh && gk -s
 riseup Mi8937_4_19 userdebug
+echo "======= build failed soon ======"
+
+# Build rom
 rise b
