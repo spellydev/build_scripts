@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14-QPR3
+repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -32,10 +32,5 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 lunch blaze_Mi439_4_19-ap2a-userdebug 
-echo "============="
-# Make cleaninstall
 make installclean
-echo "============="
-
-# Build rom
 mka bacon
