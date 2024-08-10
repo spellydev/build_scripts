@@ -23,7 +23,7 @@ rm -rf external/chromium-webview
 echo "======= remove Done ======"
 
 # remove package 
-rm -rf packages/apps/ParanoidSense/
+rm -rf packages/apps/ParanoidSense
 echo "======= remove Done ======"
 
 # Export
