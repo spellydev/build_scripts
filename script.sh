@@ -31,6 +31,6 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch blaze_Mi439_4_19-ap2a-userdebug 
+lunch blaze_Mi439_4_19-ap2a-userdebug
 make installclean
 mka bacon
