@@ -23,7 +23,7 @@ rm -rf external/chromium-webview
 echo "======= remove Done ======"
 
 # remove package 
-rm -rf packages/apps/ParanoidSense
+rm -rf packages/apps/ParanoidSense/
 echo "======= remove Done ======"
 
 # Export
@@ -37,4 +37,4 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-goafterlife Mi439_4_19 userdebug"
+goafterlife Mi439_4_19 userdebug
