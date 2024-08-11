@@ -24,6 +24,11 @@ export BUILD_USERNAME=FARHAN
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
+# Signing credit tavukkdoner
+curl -O https://raw.githubusercontent.com/Gtajisan/crDroid-build-signed-script/crdroid/create-signed-env.sh
+chmod +x create-signed-env.sh
+./create-signed-env.sh
+
 #Cherry-pick
 cd vendor/addons
 git fetch 14.0 --unshallow
