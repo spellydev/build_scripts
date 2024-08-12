@@ -22,15 +22,12 @@ echo "============================"
 rm -rf external/chromium-webview  
 echo "======= remove Done ======"
 
-# remove package 
-rm -rf packages/apps/ParanoidSense
-echo "======= remove Done ======"
-
 # cherry-pick
 cd build/make 
 git fetch https://github.com/LineageOS/android_build refs/changes/82/390682/2 
 git cherry-pick FETCH_HEAD
 cd ../..
+echo "======= cherry-pick Done ======"
 
 # Export
 export BUILD_USERNAME=FARHAN
