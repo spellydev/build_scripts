@@ -22,6 +22,10 @@ echo "============================"
 rm -rf external/chromium-webview  
 echo "======= remove Done ======"
 
+#  fix error 
+rm -rf external/chromium-webview  
+echo "=======  Done ======"
+
 # cherry-pick
 cd build/make 
 git fetch https://github.com/LineageOS/android_build refs/changes/82/390682/2 
