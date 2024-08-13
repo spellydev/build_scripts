@@ -37,3 +37,7 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 goafterlife Mi439_4_19 userdebug
+
+# Lunch 2
+. build/envsetup.sh
+goafterlife Mi439_4_19 userdebug
