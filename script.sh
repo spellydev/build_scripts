@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://gitea.com/AfterLifeProject/manifest.git -b 14.2 --git-lfs
+repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
