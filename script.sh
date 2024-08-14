@@ -36,8 +36,8 @@ echo "======= Export Done ======"
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
-
-# Lunch
 goafterlife Mi439_4_19 userdebug
+. build/envsetup.sh
+goafterlife Mi439_4_19
 
 
