@@ -14,9 +14,11 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Sync the repositories
+# build
 /opt/crave/resync.sh
-echo "============================"
+echo "============="
+echo "Sync success"
+echo "============="
 
 #  remove error 
 rm -rf external/chromium-webview  
@@ -27,7 +29,7 @@ rm -rf packages/apps/ParanoidSense
 echo "=======  Done ======"
 
 # Export
-export BUILD_USERNAME=FARHAN
+export BUILD_USERNAME=FARHAN•XD
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -38,6 +40,4 @@ echo "====== Envsetup Done ======="
 # Lunch
 goafterlife Mi439_4_19 userdebug
 
-# Lunch 2
-. build/envsetup.sh
-goafterlife Mi439_4_19 userdebug
+
