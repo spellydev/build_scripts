@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests/
 
-repo init --depth=1 -u https://github.com/Project-Elixir/manifest -b UNO
+repo init --depth=1 -u https://github.com/Project-Elixir/manifest -b UNO --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -14,7 +14,6 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Sync the repositories  
-# /opt/crave/resync.sh 
 /opt/crave/resynctest.sh
  echo "====== resynctest Done ======="
 
@@ -23,12 +22,6 @@ export BUILD_USERNAME=FARHAN_SENSI
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
-#Cherry-pick
-cd vendor/addons
-git fetch crdroid --unshallow
-git fetch https://github.com/RisingTechOSS/android_vendor_addons fourteen
-git cherry-pick dbd659e
-cd ../..
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
