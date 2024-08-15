@@ -15,7 +15,7 @@ echo "============================"
 
 # Sync the repositories  
 /opt/crave/resynctest.sh
- echo "====== resynctest Done ======="
+echo "====== resynctest Done ======="
 
 # Export
 export BUILD_USERNAME=FARHAN_SENSI
