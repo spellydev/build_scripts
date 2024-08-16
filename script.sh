@@ -20,7 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-
 # Export
 export BUILD_USERNAME=FARHAN•XD
 export BUILD_HOSTNAME=crave
@@ -32,10 +31,5 @@ echo "====== Envsetup Done ======="
 
 # Lunch
 lunch droidx_Mi439_4_19-ap2a-userdebug
-echo "============="
-# Make cleaninstall
 make installclean
-echo "============="
-
-# Build rom
 mka bacon
