@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests/
 
-repo init --depth=1 -u https://github.com/Project-Elixir/manifest -b UNO
+repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -13,10 +13,9 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Sync the repositories  
-# /opt/crave/resync.sh 
+# Sync the repositories   
 /opt/crave/resynctest.sh
- echo "====== resynctest Done ======="
+echo "====== resynctest Done ======="
 
 # Export
 export BUILD_USERNAME=FARHAN_SENSI
@@ -27,6 +26,6 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
- lunch aosp_Mi439_4_19-userdebug
- make installclean
- mka bacon
+lunch aosp_Mi439_4_19-ap2a-userdebug
+make installclean
+mka bacon
