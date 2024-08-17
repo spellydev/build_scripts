@@ -36,10 +36,3 @@ echo "============="
 # Build rom
 rise b
 
-# Lunch
-. build/envsetup.sh && gk -s
-riseup Mi439 userdebug
-echo "============="
-
-# Build rom
-rise b
