@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b rise-b .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b Matrixx-14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -26,13 +26,12 @@ export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
 # Set up build environment
-. build/envsetup.sh && gk -s
+. build/envsetup.sh 
 echo "====== Envsetup Done ======="
 
-# Lunch
-riseup Mi439_4_19 userdebug
+# Lunch  
+. build/envsetup.sh
+brunch Mi439_4_19 
 echo "============="
 
-# Build rom
-rise b
 
