@@ -25,13 +25,10 @@ export BUILD_USERNAME=FARHAN_UN
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
-# Set up build environment
-. build/envsetup.sh 
-echo "====== Envsetup Done ======="
-
 # Lunch  
 . build/envsetup.sh
 brunch Mi439_4_19 
-echo "============="
+brunch Mi439_4_19 userdebug
+
 
 
