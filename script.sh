@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR2 -g default,-mips,-darwin,-notdefault
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR3 -g default,-mips,-darwin,-notdefault
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Phantm7/local_manifests_clo -b udc-2-infinity .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b udc-2-infinity .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
