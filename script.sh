@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b udc-2-infinity .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b infinity-x .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=Phantom
+export BUILD_USERNAME=PFARHAN
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -30,8 +30,6 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch infinity_mi439-userdebug || lunch infinity_mi439-ap1a-userdebug
-echo "====== lunch success ======"
-
+lunch infinity_Mi439_4_19-ap2a-userdebug 
 make installclean
 mka bacon
