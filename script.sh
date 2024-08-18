@@ -20,6 +20,13 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# cherry-pick
+cd build/make 
+git fetch https://github.com/LineageOS/android_build refs/changes/82/390682/2 
+git cherry-pick FETCH_HEAD
+cd ../..
+echo "======= cherry-pick Done ======"
+
 # Export
 export BUILD_USERNAME=PFARHAN
 export BUILD_HOSTNAME=crave
