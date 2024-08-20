@@ -2,6 +2,8 @@
 
 rm -rf .repo/local_manifests/
 
+
+# Initialize local repository
 repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
 echo "=================="
 echo "Repo init success"
@@ -20,7 +22,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN
+export BUILD_USERNAME=FARHAN•AFK
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -30,10 +32,12 @@ git fetch 14.0 --unshallow
 git fetch https://github.com/RisingTechOSS/android_vendor_addons.git fourteen
 git cherry-pick dbd659e
 cd ../..
+
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
+# Lunch 
 lunch lineage_Mi439_4_19-ap2a-userdebug
 make installclean
 mka bacon
