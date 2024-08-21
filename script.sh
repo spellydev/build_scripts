@@ -10,7 +10,7 @@ echo "gay DerpFest Repo init success"
 echo "=============================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests_clo -b udc-2-derp .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b 14/derp .repo/local_manifests
 echo "========================================="
 echo "Fuckin# shit Local manifest clone success"
 echo "========================================="
@@ -21,21 +21,9 @@ echo "======================"
 echo "Sync successfully Done"
 echo "======================"
 
-
-# Remove overrides
-# Define a list of packages to remove
-echo "===== Remove overrides started ====="
-OVER_PACKAGES=("Dialer" "Contacts Contacts2" "messaging" "DeskClock" "Messaging" "Contacts" "webview Browser2" "webview" "Browser2" "PicoTts" "LatinIME")
-# Loop through the list and remove each package from Android.mk files
-for PACKAGEU in "${OVER_PACKAGES[@]}"; do
-  find vendor/gms -name 'Android.mk' -exec sed -i "/^LOCAL_OVERRIDES_PACKAGES := $PACKAGEU$/d" {} \;
-done
-echo "===== Remove overrides Success ====="
-
 # Export
 export BUILD_USERNAME=FARHAN_shit
 export BUILD_HOSTNAME=crave
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "============="
 
 # Set up build environment
