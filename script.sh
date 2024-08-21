@@ -29,9 +29,6 @@ echo "======= Export Done ======"
 . build/envsetup.sh 
 echo "====== Envsetup Done ======="
 
-# singed 
-gk -s
-
 # Lunch
 riseup Mi439_4_19 userdebug
 echo "============="
