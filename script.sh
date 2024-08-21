@@ -14,25 +14,11 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-cd .repo/repo
-git pull -r
-cd ../..
-
 # Sync
 /opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
-
-# Remove overrides
-# Define a list of packages to remove
-echo "===== Remove overrides started ====="
-
-OVER_PACKAGES=("GoogleContacts" "GoogleDialer" "PrebuiltBugle" "dialer")
-for PACKAGEU in "${OVER_PACKAGES[@]}"; do
-find vendor/gms -name 'common-vendor.mk' -exec sed -i "/$PACKAGEU/d" {} \;
-done
-echo "===== Remove overrides Success ====="
 
 # Export
 export BUILD_USERNAME=FARHAN_UN
