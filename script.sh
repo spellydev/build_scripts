@@ -27,6 +27,9 @@ git cherry-pick FETCH_HEAD
 cd ../..
 echo "======= cherry-pick Done ======"
 
+# remove face unlock 
+rm -rf packages/apps/FaceUnlock
+
 # Export
 export BUILD_USERNAME=PFARHAN
 export BUILD_HOSTNAME=crave
