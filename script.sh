@@ -20,10 +20,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-# build fix 
-cd hardware/lineage/interfaces; \
-git checkout 7cbd562024188b1db28158c3a284c9b7daba087d; \
-
 # Export
 export BUILD_USERNAME=FARHAN_UN
 export BUILD_HOSTNAME=crave
