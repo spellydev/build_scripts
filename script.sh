@@ -11,7 +11,7 @@ echo "gay DerpFest Repo init success"
 echo "=============================="
 
 # Local manifests
-git clone https://github.com/FrhnDroid/Local-Manifest -b 14/derp .repo/local_manifests
+git clone https://github.com/FrhnDroid/Local-Manifest -b Voltage-14 .repo/local_manifests
 echo "========================================="
 echo "Fuckin# shit Local manifest clone success"
 echo "========================================="
