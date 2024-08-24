@@ -33,7 +33,7 @@ echo "======= cherry-pick Done ======"
 rm -rf packages/apps/FaceUnlock
 
 # Export
-export BUILD_USERNAME=PFARHAN
+export BUILD_USERNAME=Jayzee-Zee
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -42,6 +42,6 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch infinity_Mi439_4_19-ap2a-userdebug 
+lunch lineage_earth-ap2a-userdebug 
 make installclean
 mka bacon
