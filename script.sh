@@ -34,7 +34,7 @@ echo "im crave sir you rom sync Done ok bye "
 echo "======================================"
 
 # Lunch
-lunch derp_earth-ap2a-userdebug 
+lunch lineage_earth-ap2a-userdebug 
 echo "============="
 
 # Make cleaninstall
