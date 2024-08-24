@@ -10,7 +10,7 @@ echo "gay DerpFest Repo init success"
 echo "=============================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b 14/derp .repo/local_manifests
+git clone https://github.com/FrhnDroid/Local-Manifest -b 14/derp .repo/local_manifests
 echo "========================================="
 echo "Fuckin# shit Local manifest clone success"
 echo "========================================="
@@ -22,7 +22,7 @@ echo "Sync successfully Done"
 echo "======================"
 
 # Export
-export BUILD_USERNAME=derpshit
+export BUILD_USERNAME=Jayzee-Zee
 export BUILD_HOSTNAME=crave
 echo "============="
 
@@ -33,11 +33,11 @@ echo "im crave sir you rom sync Done ok bye "
 echo "======================================"
 
 # Lunch
-lunch derp_Mi439_4_19-ap2a-userdebug 
+lunch derp_earth-ap2a-userdebug 
 echo "============="
 
 # Make cleaninstall
-make installclean
+#make installclean
 echo "============="
 
 # Build rom
