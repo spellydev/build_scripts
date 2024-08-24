@@ -38,7 +38,7 @@ lunch derp_earth-ap2a-userdebug
 echo "============="
 
 # Make cleaninstall
-#make installclean
+make installclean
 echo "============="
 
 # Build rom
