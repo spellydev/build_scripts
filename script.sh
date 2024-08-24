@@ -1,5 +1,6 @@
 #!/bin/bash
-
+git config --global user.email salitagwapo@gmail.com
+git config --global user.name Jayzee
 rm -rf .repo/local_manifests/
 
 
