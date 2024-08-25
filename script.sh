@@ -35,7 +35,7 @@ echo "im crave sir you rom sync Done ok bye "
 echo "======================================"
 
 # Lunch
-lunch derp_earth-userdebug 
+breakfast derp_earth-userdebug 
 echo "============="
 
 # Make cleaninstall
