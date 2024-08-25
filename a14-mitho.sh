@@ -7,6 +7,7 @@ git clone https://github.com/Jayzee-Zee/local_manifests/tree/Rising .repo/local_
 /opt/crave/resync.sh
 . build/envsetup.sh
 export TARGET_PRODUCT=earth
+export RISING_MAINTAINER=Jayzee-Zee
 riseup earth userdebug 
 #make installclean
 #cd kernel/xiaomi/mithorium-4.19/kernel
