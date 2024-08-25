@@ -6,10 +6,10 @@ git clone https://github.com/Jayzee-Zee/local_manifests/tree/Rising .repo/local_
 #build
 /opt/crave/resync.sh
 . build/envsetup.sh
-export TARGET_PRODUCT=earth
+export TARGET_PRODUCT=lineage_earth
 export TARGET_RELEASE=ap2a
 export RISING_MAINTAINER=Jayzee-Zee
-riseup earth userdebug 
+riseup lineage_earth user 
 #make installclean
 #cd kernel/xiaomi/mithorium-4.19/kernel
 #curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
