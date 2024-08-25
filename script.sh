@@ -43,6 +43,6 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_earth-ap2a-userdebug 
-make installclean
+lunch infinity_earth-userdebug 
+#make installclean
 mka bacon
