@@ -7,6 +7,7 @@ git clone https://github.com/Jayzee-Zee/local_manifests/tree/Rising .repo/local_
 /opt/crave/resync.sh
 . build/envsetup.sh
 export TARGET_PRODUCT=earth
+export TARGET_RELEASE=ap2a
 export RISING_MAINTAINER=Jayzee-Zee
 riseup earth userdebug 
 #make installclean
