@@ -14,4 +14,4 @@ export RISING_MAINTAINER=Jayzee-Zee
 source build/envsetup.sh
  
 # Build the ROM
-riseup earth userdebug && make installclean && rise b
+riseup earth user && make installclean && rise b
