@@ -1,8 +1,7 @@
 rm -rf .repo/local_manifests/  && # Clone local_manifests repository
 repo init -u https://github.com/RisingTechOSS/android.git -b fourteen --git-lfs --depth=1
 #clone dev tree
-git clone https://github.com/Jayzee-Zee/android_device_xiaomi_earth.git --depth 1 -b Rising
-
+git clone https://github.com/Jayzee-Zee/Local-Manifest --depth 1 -b Rising .repo/local_manifests &&
 # Sync the repositories
 /opt/crave/resync.sh  && 
 # Set up build environment
