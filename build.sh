@@ -7,10 +7,10 @@ git clone https://github.com/Jayzee-Zee/Local-Manifest --depth 1 -b Rising .repo
 # Set up build environment
 export BUILD_USERNAME=Jayzee-Zee 
 export BUILD_HOSTNAME=crave
-export TARGET_PRODUCT=rising_earth
+export TARGET_PRODUCT=lineage_earth
 export TARGET_RELEASE=ap2a
 export RISING_MAINTAINER=Jayzee-Zee 
 source build/envsetup.sh
  
 # Build the ROM
-lunch rising_earth-ap2a-userdebug && make installclean && rise b
+riseup earth userdebug && make installclean && rise b
