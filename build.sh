@@ -10,8 +10,8 @@ export BUILD_HOSTNAME=crave
 #export TARGET_PRODUCT=lineage_earth
 #export TARGET_RELEASE=ap2a
 export TZ=Asia/Jakarta
-export RISING_MAINTAINER=Jayzee-Zee 
+#export RISING_MAINTAINER=Jayzee-Zee 
 source build/envsetup.sh
  
 # Build the ROM
-lunch xdroid_earth userdebug && make installclean && rise b
+lunch xdroid_earth userdebug && make installclean && make xd -j$(nproc --all)
