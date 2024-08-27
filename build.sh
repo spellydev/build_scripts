@@ -1,3 +1,4 @@
+rm -rf out/target/product/earth/*
 rm -rf .repo/local_manifests/  && # Clone local_manifests repository
 repo init -u https://github.com/RisingTechOSS/android.git -b fourteen --git-lfs --depth=1
 #clone dev tree
