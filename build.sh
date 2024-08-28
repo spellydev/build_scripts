@@ -10,7 +10,7 @@ export BUILD_USERNAME=Farhan
 export BUILD_HOSTNAME=crave
 #export TARGET_PRODUCT=lineage_earth
 #export TARGET_RELEASE=ap2a
-export TZ=Asia/Jakarta
+export TZ=Asia/Ipoh
 export RISING_MAINTAINER=👾FrhnDroid👾 
 source build/envsetup.sh
  
