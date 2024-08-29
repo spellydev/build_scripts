@@ -14,4 +14,8 @@ export TZ=Asia/Jakarta
 source build/envsetup.sh
  
 # Build the ROM
-lunch lineage_earth-ap2a-user && rise b
+lunch lineage_earth-ap2a-user 
+lunch lineage_earth-ap2a user
+
+#beelding
+rise b
