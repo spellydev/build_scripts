@@ -14,4 +14,4 @@ export TZ=Asia/Jakarta
 source build/envsetup.sh
  
 # Build the ROM
-riseup earth user && rise b
+lunch lineage_earth-ap2a-user && rise b
