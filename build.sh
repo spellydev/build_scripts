@@ -10,7 +10,8 @@ export BUILD_USERNAME=Jayzee-Zee
 export BUILD_HOSTNAME=crave
 #export TARGET_PRODUCT=lineage_earth
 #export TARGET_RELEASE=ap2a
-export TZ=Asia/Jakarta 
+export TZ=Asia/Jakarta
+export RISING_MAINTAINER=Jayzee
 source build/envsetup.sh
  
 # Build the ROM
