@@ -1,6 +1,6 @@
 rm -rf out/target/product/earth/*
 rm -rf .repo/local_manifests/  && # Clone local_manifests repository
-repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs --depth=1
 #clone dev tree
 git clone https://github.com/FrhnDroid/Local-Manifest --depth 1 -b EvolutionXyz .repo/local_manifests &&
 # Sync the repositories
@@ -14,4 +14,4 @@ export TZ=Asia/Ipoh
 source build/envsetup.sh
  
 # Build the ROM
-lunch lineage_earth-ap2a-userdebug && m evolution
+lunch lineage_earth-userdebug && m evolution
