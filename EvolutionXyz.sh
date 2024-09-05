@@ -14,4 +14,4 @@ export TZ=Asia/Ipoh
 source build/envsetup.sh
  
 # Build the ROM
-lunch evolution_earth-userdebug && m evolution
+lunch lineage_earth-ap2a-userdebug && m evolution
