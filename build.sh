@@ -1,4 +1,5 @@
 rm -rf out/target/product/earth/*
+rm -rf hardware/xiaomi
 rm -rf .repo/local_manifests/  && # Clone local_manifests repository
 repo init -u https://github.com/AlphaDroid-Project/manifest.git -b alpha-14 --git-lfs --depth=1
 #clone dev tree
