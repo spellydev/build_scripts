@@ -1,6 +1,6 @@
 rm -rf out/target/product/earth/*
 rm -rf .repo/local_manifests/  && # Clone local_manifests repository
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14 --git-lfs --depth 1
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14 --git-lfs --depth=1
 #clone dev tree
 git clone https://github.com/FrhnDroid/Local-Manifest --depth 1 -b Derp-14 .repo/local_manifests &&
 # Sync the repositories
