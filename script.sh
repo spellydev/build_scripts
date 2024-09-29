@@ -38,7 +38,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # lunch 
-. build/envsetup.sh
-goafterlife earth
-goafterlife earth userdebug
+lunch afterlife_earth-userdebug
+make installclean 
+m afterlife
 
