@@ -1,47 +1,44 @@
-
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
 
+# repo init rom
 repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b afterlife .repo/local_manifests
+git clone https://github.com/FrhnDroid/Local-Manifest --depth 1 -b Afterlife-14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Sync
+# build
 /opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
 
+#  remove error 
+rm -rf external/chromium-webview  
+echo "======= remove Done ======"
+
+#  fix error 
+rm -rf packages/apps/ParanoidSense
+echo "=======  Done ======"
+
 # Export
-export BUILD_USERNAME=FARHAN
+export BUILD_USERNAME=FrhnDroid
 export BUILD_HOSTNAME=crave
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
-#Cherry-pick
-cd vendor/addons
-git fetch 14.0 --unshallow
-git fetch https://github.com/RisingTechOSS/android_vendor_addons.git fourteen
-git cherry-pick dbd659e
-cd ../..
-
 # Set up build environment
-. build/envsetup.sh
+source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# lunch fumking
-lunch afterlife_Mi439_4_19-userdebug
-make installclean 
-m afterlife
-
-
-
+# lunch 
+. build/envsetup.sh
+goafterlife earth
+goafterlife earth userdebug
 
