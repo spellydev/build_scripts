@@ -1,7 +1,6 @@
 #rm -rf out/target/product/earth/*
 rm -rf hardware/xiaomi
 rm -rf hardware/mediatek
-rm -rf frameworks/base
 rm -rf device/xiaomi/earth
 rm -rf device/mediatek/sepolicy_vndr
 rm -rf kernel/xiaomi/earth
@@ -14,7 +13,6 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b 
 git clone https://github.com/FrhnDroid/android_kernel_xiaomi_earth -b nonksu kernel/xiaomi/earth
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-21 hardware/mediatek &&
-git clone https://github.com/The-Pixel-Project/frameworks_base -b fourteen-qpr3 frameworks/base
 #git clone https://github.com/FrhnDroid/Local-Manifest --depth 1 -b PixelProject .repo/local_manifests &&
 # Sync the repositories
 /opt/crave/resync.sh  && 
